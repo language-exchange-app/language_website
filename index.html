@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TalkiDate – Meet Someone New Today</title>
+
+<meta name="description" content="Chat instantly with singles near you. Fast signup. Real conversations. Start now." />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --primary: #22c55e;
+  --primary-hover: #16a34a;
+  --bg-light: #f4f7fc;
+  --text-dark: #1e293b;
+  --text-muted: #565e68;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  background-color: #9933CC;
+}
+
+.hero-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    max-width:1100px;
+    margin:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    color:#ffffff;
+}
+
+@media (max-width:768px){
+  .hero-container{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+
+.hero-text{
+    flex:1;
+    text-align:left;
+}
+
+.hero-text h1{
+    font-size:44px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:14px;
+}
+
+.cta-btn {
+  background: var(--primary);
+  color: white;
+  padding: 18px 36px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.25s ease;
+}
+
+.cta-btn:hover {
+  background: var(--primary-hover);
+}
+
+.how-it-works {
+    padding: 30px;
+    text-align: center;
+}
+
+.how-it-works p {
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.videos {
+    background-color:#e0dbfc;
+}
+
+.videos-container {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+@media (max-width:768px){
+  .videos-container{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+
+.video {
+  width: 305px;
+  height: 630px;
+}
+
+.video-men {
+  background-image: url("assets/men-bg.svg");
+  width: 100%;
+  height: 700px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat:no-repeat;
+  text-align: center;
+}
+
+.video-women {
+  background-image: url("assets/women-bg.svg");
+  width: 100%;
+  height: 700px;
+  background-size: contain;
+  background-position: top;
+  background-repeat:no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.feature-box {
+  padding: 30px;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+}
+
+.icon {
+  background-color:#5511f8;
+  border-radius: 16px 16px 16px 16px;
+  margin-bottom: 10px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  color: white;
+  display: block;
+  font-size: 24px;
+}
+
+.social-proof {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.social-proof h2 {
+  margin-bottom: 20px;
+}
+
+.faq {
+  padding: 60px 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.contact {
+  padding: 30px;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  padding: 40px 20px;
+  color: var(--text-muted);
+  background-color:#e0dbfc;
+}
+
+footer a {
+  color: var(--text-muted);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(58, 58, 216);
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="logo">
+    <img src="assets/logo-1.png" alt="TalkiDate logo" />
+  </div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Meet Your Language Partner Today</h1>
+      <p>Exchange languages or find love, you choose. Available soon on the App Store and Google Play.</p>
+      <a href="https://youtu.be/0_izZeQMAgc" class="cta-btn">Watch a Demo</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/hero.webp" alt="Chatting couple">
+    </div>
+  </div>
+</section>
+
+<section class="how-it-works container">
+    <h2>How It Works</h2>
+    <p>Are you learning a language and want to practice with a native speaker from around the world? Then this app is for you. Are you also interested in dating your language partner? No problem, we offer this feature too. With TalkiDate each user is required to upload an introductory video, and the application presents to the user videos that correspond to profiles that match their language and dating preferences. For each video the user must decide whether to like it or not and if there is a match then they can start talking to that person.</p>
+    <img src="assets/steps.png" alt="App steps">
+</section>
+
+<section class="videos">
+  <div class="videos-container">
+    <div class="video-men">
+      <video autoplay loop muted playsinline class="video">
+        <source src="assets/men.webm" type="video/webm">
+      </video>
+    </div>
+    <div class="video-women">
+      <video autoplay loop muted playsinline class="video">
+        <source src="assets/women.webm" type="video/webm">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="features container">
+
+  <div class="feature-box">
+    <div class="icon">
+      <i class="fa-solid fa-user-check"></i>
+    </div>
+    <h3>No waiting for approval</h3>
+    <p>Create a profile and start browsing automatically.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">
+      <i class="fa-solid fa-user-friends"></i>
+    </div>
+    <h3>Match to talk</h3>
+    <p>Avoid having to handle a huge number of incoming messages.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">
+      <i class="fa-solid fa-heart"></i>
+    </div>
+    <h3>Dating features</h3>
+    <p>Keeps separated those only interested in language exchange from those also interested in dating.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">
+      <i class="fa-solid fa-transgender"></i>
+    </div>
+    <h3>Free filter by gender</h3>
+    <p>You can tell the app to show you men, women or both.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">
+      <i class="fa-solid fa-mars-double"></i>
+    </div>
+    <h3>Gay friendly</h3>
+    <p>You can tell the app to show you straight, gay or bisexual men or women.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">
+      <i class="fa-solid fa-user-plus"></i>
+    </div>
+    <h3>100% Free Signup</h3>
+    <p>Create your profile and start chatting instantly.</p>
+  </div>
+
+</section>
+
+<!--
+<section class="social-proof">
+  <div class="container">
+    <h2>Join Thousands Already Chatting</h2>
+    <p>New members join every minute.</p>
+
+    <br />
+
+    <a href="YOUR_AFFILIATE_LINK" class="cta-btn">Join Now</a>
+  </div>
+</section>
+
+<section class="faq container">
+
+  <div class="faq-item">
+    <h3>Is signup free?</h3>
+    <p>Yes. Registration takes less than 30 seconds.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Are people really nearby?</h3>
+    <p>Matches are shown based on your location.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Can I start chatting immediately?</h3>
+    <p>Yes. Most users begin conversations right after joining.</p>
+  </div>
+
+</section>
+-->
+
+<footer>
+  <img src="assets/logo-1.png" alt="TalkiDate logo" />
+  <div class="contact">
+    <p>
+      Have questions? Have a feature request? Reach out to:<br />
+      Yoel Lorenzo - Founder & CEO<br />
+      <a href="mailto:y.lorenzo@talkidate.com">y.lorenzo@talkidate.com</a>
+    </p>
+  </div>
+  
+<!--
+  <p>
+    <a href="#">Privacy Policy</a>
+    |
+    <a href="#">Terms</a>
+    |
+    <a href="#">Contact</a>
+  </p>
+-->
+  <p>
+    © 2026 TalkiDate
+  </p>
+
+</footer>
+
+</body>
+</html>
